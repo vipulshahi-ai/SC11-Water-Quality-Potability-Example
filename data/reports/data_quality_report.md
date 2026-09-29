@@ -63,10 +63,12 @@ The pipeline created these files in `data/processed/`:
 - `validation.csv`
 - `test.csv`
 
-## Limitation and next action
+## Limitation and generated test scenarios
 The cited labelled dataset contains 2,556 real records. It must not be duplicated and described as new real observations.
 
-The next Step 2 task is to create and document at least 10,000 separate water-quality testing scenarios for stress testing. These scenarios will be clearly labelled as generated test scenarios, not original laboratory observations.
+For this SC11 teaching example, Step 2 also creates 256 generated water-quality testing scenarios. This is 10% of the 2,556 cited real records, rounded up. These scenarios are clearly labelled as generated test scenarios, not original laboratory observations.
+
+The generator uses a fixed seed, applies small documented changes to sampled real-data patterns, validates the output, and saves it separately in `data/generated/`. It must never be mixed into `train.csv`, `validation.csv`, or `test.csv` and must not be used to claim model accuracy.
 
 ## Safety note
 This is an educational decision-support project. Its prediction does not replace laboratory testing or official drinking-water certification.
