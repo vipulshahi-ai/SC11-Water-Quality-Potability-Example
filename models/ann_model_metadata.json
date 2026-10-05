@@ -1,0 +1,18 @@
+{
+  "project": "SC11 Water Quality Potability",
+  "technique": "Feed-forward ANN / backpropagation",
+  "features": [
+    "ph",
+    "Hardness",
+    "Solids",
+    "Chloramines",
+    "Sulfate",
+    "Conductivity",
+    "Organic_carbon",
+    "Trihalomethanes",
+    "Turbidity"
+  ],
+  "target": "Potability",
+  "random_seed": 42,
+  "architecture": "9 inputs -> 16 -> 8 -> 1 output"
+}
