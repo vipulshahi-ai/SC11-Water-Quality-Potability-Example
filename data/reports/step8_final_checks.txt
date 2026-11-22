@@ -1,0 +1,30 @@
+SC11 published Step 7 clone check | 22 November 2026
+Tested commit: 1bd92a0
+Interpreter: separate environment installed from requirements-step7-runtime.txt.
+The following commands ran in the fresh published clone, not the original project.
+
+$ python -m unittest -v test_product_predict
+
+test_invalid_ph (test_product_predict.ValidationTests.test_invalid_ph) ... ok
+test_missing_feature (test_product_predict.ValidationTests.test_missing_feature) ... ok
+test_negative_measurement (test_product_predict.ValidationTests.test_negative_measurement) ... ok
+test_normal (test_product_predict.ValidationTests.test_normal) ... ok
+test_ph_boundaries (test_product_predict.ValidationTests.test_ph_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+Exit code: 0
+
+$ python src/compare_step6_predictions.py
+PASS: All nine inputs, the predicted class and the label match.
+Class 1 - Predicted potable class
+
+Exit code: 0
+
+Published file matches original: models/ann_water_potability.pkl
+Published file matches original: models/ann_model_metadata.json
+Published file matches original: report/final_report.pdf
+Published file matches original: presentation/project_presentation.pptx
+Published file matches original: presentation/project_presentation.pdf
