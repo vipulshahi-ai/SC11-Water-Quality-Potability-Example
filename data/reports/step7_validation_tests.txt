@@ -1,0 +1,15 @@
+SC11 teaching example - check recorded 22 November 2026
+Command: python -m unittest -v test_product_predict
+
+test_invalid_ph (test_product_predict.ValidationTests.test_invalid_ph) ... ok
+test_missing_feature (test_product_predict.ValidationTests.test_missing_feature) ... ok
+test_negative_measurement (test_product_predict.ValidationTests.test_negative_measurement) ... ok
+test_normal (test_product_predict.ValidationTests.test_normal) ... ok
+test_ph_boundaries (test_product_predict.ValidationTests.test_ph_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+
+Exit code: 0

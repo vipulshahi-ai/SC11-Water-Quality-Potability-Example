@@ -1,0 +1,7 @@
+SC11 teaching example - check recorded 22 November 2026
+Command: python src/compare_step6_predictions.py
+
+PASS: All nine inputs, the predicted class and the label match.
+Class 1 - Predicted potable class
+
+Exit code: 0

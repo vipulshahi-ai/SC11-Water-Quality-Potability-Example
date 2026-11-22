@@ -1,0 +1,41 @@
+SC11 independent environment check | 22 November 2026
+Source: separate copy of the Step 6 application and Step 7 runtime requirements.
+This is an environment check, not yet a fresh GitHub clone verification.
+
+$ python --version
+Python 3.12.1
+
+Exit code: 0
+
+$ python -m pip check
+No broken requirements found.
+
+Exit code: 0
+
+$ python -m unittest -v test_product_predict
+
+test_invalid_ph (test_product_predict.ValidationTests.test_invalid_ph) ... ok
+test_missing_feature (test_product_predict.ValidationTests.test_missing_feature) ... ok
+test_negative_measurement (test_product_predict.ValidationTests.test_negative_measurement) ... ok
+test_normal (test_product_predict.ValidationTests.test_normal) ... ok
+test_ph_boundaries (test_product_predict.ValidationTests.test_ph_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+Exit code: 0
+
+$ python src/compare_step6_predictions.py
+PASS: All nine inputs, the predicted class and the label match.
+Class 1 - Predicted potable class
+
+Exit code: 0
+
+Browser rehearsal on this separate copy at localhost:8518:
+Normal saved sample: class 1, readable label and educational notice displayed.
+pH 14: accepted; class 0 displayed.
+pH 15: range error displayed; no prediction.
+New CSV download: not verified in this rehearsal (browser download stalled).
+The CSV parity command above compares the existing saved Step 6 CSV files.
+Missing-model case: historical Step 6 evidence; not repeated here.
