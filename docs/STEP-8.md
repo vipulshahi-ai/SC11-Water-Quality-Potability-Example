@@ -36,7 +36,7 @@ SC11 is an instructor teaching example by Bipul Kumar Shahi for the Soft Computi
 Student teams should replace this statement with each real member's name, completed work, changed files, evidence and demonstration responsibility. Every member should explain the complete workflow, one design choice and one limitation.
 
 ## Remaining work and limits
-- Repeat the new browser CSV download, save it to data/reports and compare against the same-input reference.
+- The previously unchecked CSV download was completed on 23 November 2026. See the follow-up below; the earlier rehearsal table preserves the 22 November observations.
 - Fix full-dataset imputation by splitting first, fitting preprocessing on training rows only, and retraining/reevaluating. Existing scores retain that limitation.
 - Broaden app/reference checks beyond one saved CSV sample.
 - A faculty demonstration, questions and approval must be recorded only after they actually happen.
@@ -52,3 +52,10 @@ Student teams should replace this statement with each real member's name, comple
 - Previous preparation and rehearsal: docs/STEP-7.md.
 - Public showcase: not published; instructor chooses whether to publish. Students use their own project story and select the faculty/university mentions.
 - Portal: no dummy student submission made for this unallocated instructor example.
+
+## CSV download follow-up - 23 November 2026
+The new browser download completed from the published Step 7 app copy. The comparison passed for all nine measurements, predicted class 1 and label on the same normal sample.
+
+- Downloaded evidence: data/reports/step8_ui_prediction.csv.
+- Command and actual output: data/reports/step8_download_comparison.txt.
+- This closes the download check left unverified in the 22 November rehearsal. It remains a single-sample consistency check, not a model-accuracy test.

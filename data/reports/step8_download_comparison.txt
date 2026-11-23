@@ -1,0 +1,10 @@
+SC11 fresh browser download follow-up | 23 November 2026
+App: published Step 7 clone, commit 1bd92a0; separately installed Python 3.12.1 environment.
+Actions: Load one existing example, Predict using saved ANN, Download this result as CSV.
+A new browser download completed and was saved as data/reports/step8_ui_prediction.csv.
+Command: python src/compare_step6_predictions.py data/reports/step5_ui_reference_prediction.csv data/reports/step8_ui_prediction.csv
+
+PASS: All nine inputs, the predicted class and the label match.
+Class 1 - Predicted potable class
+
+Exit code: 0
